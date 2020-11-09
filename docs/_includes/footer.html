@@ -1,5 +1,6 @@
 <footer id="footer">
     <!--Footer Button-->
+    <br>
     <div class="container has-text-centered has-background-grey-darker" id="backtotop">
         <a class="has-text-white" onclick="window.scroll(0,0)">BACK TO TOP</a>
     </div>
@@ -8,18 +9,42 @@
         <div class="container columns">
             <!--Name Section-->
             <div class="column has-text-left-desktop has-text-centered-mobile">
-                <a href="{{site.url}}{{site.baseurl}}/#about">
+                <a href="{{site.url}}{{site.baseurl}}/#">
                     <div class="columns">
                         <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
                             <figure class="image is-64x64">
-                                <img class="is-rounded" src="{{site.author-image}}">
+                                <img class="is-rounded" src="{{site.company-logo}}">
                             </figure>
                         </div>
-                        <div class="column is-marginless">
-                            <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
-                            <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
-                            </div>
+                        <div class="column is-marginless has-text-white">
+                            <h5 class="has-text-white">Follow us</h5>
+                            <div class="content has-text-light-grey">
+                                {% unless site.github_username ==  %}
+                                <li>
+                                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-light-grey"><i class="fab fa-github"></i> {{site.github_username}}</a>
+                                </li>
+                                {% endunless %}
+                                {% unless site.twitter_username == %}
+                                <li>
+                                <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-light-grey"><i class="fab fa-twitter"></i> {{site.twitter_username}}</a>
+                                </li>
+                                {% endunless %}
+                                {% unless site.instagram_username ==  %}
+                                <li>
+                                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-light-grey"><i class="fab fa-instagram"></i> {{site.instagram_username}}</a>
+                                </li>
+                                {% endunless %}
+                                {% unless site.linkedin_username ==  %}
+                                <li>
+                                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-light-grey"><i class="fab fa-linkedin"></i> {{site.linkedin_username}}</a>
+                                </li>
+                                {% endunless %}
+                                {% unless site.youtube_channel_id ==  %}
+                                <li>
+                                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-light-grey"><i class="fab fa-youtube"></i> {{site.youtube_channel_id}}</a>
+                                </li>
+                                {% endunless %}
+                            </div>                            
                         </div>
                     </div>
                 </a>
@@ -27,7 +52,7 @@
 
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>More Links</h3>
+                <h3>Site Links</h3>
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
@@ -35,23 +60,24 @@
                 </li>
                 {% endunless %}
                 {% endfor %}
-                <li>
+                <!-- if blog page -->
+                <!-- <li>
                     <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
-                </li>
+                </li> -->
             </div>
 
             <!--Blog-post Section-->
-            <div class="column has-text-white">
+            <!-- <div class="column has-text-white">
                 <h3>Recent Posts</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
                     <a href="{{post.url | absolute_url}}">{{post.title}}</a>
                 </li>
                 {% endfor %}
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="has-background-black has-text-centered has-text-white" id="credits">
-        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }} | <a href="https://github.com/thedevslot/WhatATheme" target="_blank" rel="noopener noreferrer">WhatATheme</a> - A Theme made with <i class="fas fa-heart has-text-danger"></i> by <a href="https://www.twitter.com/thedevslot" target="_blank" rel="noopener noreferrer">TheDevsLot</a> Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
+        <i class="far fa-copyright"></i> {{ "now" | date: "%Y" }}  Clever Vision - All rights reserved | Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>
     </div>
 </footer>

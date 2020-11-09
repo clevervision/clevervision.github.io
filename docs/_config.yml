@@ -25,29 +25,28 @@ heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: clevervision@gmail.com
-facebook_username: 
 twitter_username: clevervision
 instagram_username: 
 linkedin_username: 
 github_username:  clevervision
 youtube_channel_id: 
-reddit_username: 
-behance_username: 
-dribbble_username: 
-spotify_username: 
+ 
 
 # Google Analytics
 google-analytics: 
 
-# Disqus
-disqus-shortname: 
 
-# Name of the Author
-author-name: Clever Vision
-# URL for the Image of the Author
-author-image: https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png
-# 60 Words About the Author
-author-about: We are a group of passionate AI engineers who love researching and face new challenges every time. We develop state-of-the-art solutions in Computer Vision to deal with real world problems.
+company-name: Clever Vision
+company-logo: /assets/images/cv_logo.png
+company-about: We are a group of passionate AI engineers who love researching and face new challenges every time. We develop state-of-the-art solutions in Computer Vision to deal with real world problems.
+
+author-image1: /assets/images/uri.jpg
+author-about1: Esteban Uriza. MSc in Computer Science from the University of de Buenos Aires. He enjoys researching new technologies and algorithms exploiting the possibilities offered by Machine Learning, Computer Vision, AI tools, to create great features for applications. 
+author-image2: /assets/images/ubalde.jpg
+author-about2: Sebastián Ubalde. PhD in Computer Science from the University of de Buenos Aires. Hiring talent to democratize the commerce, money and payments in Latin America 
+author-image3: /assets/images/pachi.jpg
+author-about3: Francisco Gómez-Fernández. PhD in Computer Science from the University of de Buenos Aires. He has participated as PI and project leader in various technology transfer projects in Argentina. Funded by CONICET, he completed a two years postdoctoral research project under the supervision of Prof. Taubin working on new methods for 3D point cloud simplification, surface reconstruction and 3D scanning.
+
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/clevervision
 
